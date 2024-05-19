@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/core/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid/main.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="parallax">
+            <h2>Welcome to Our Restaurant</h2>
+            <p>Experience the best dining experience with us.</p>
+        </section>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-item">
+                <h3>Dish Name</h3>
+                <p>Description of the dish.</p>
+                <p>Price: Rs 500</p>
+            </div>
+            <!-- Add more menu items as needed -->
+        </section>
+        <section id="reservations">
+            <h2>Make a Reservation</h2>
+            <form id="reservationForm">
+                <label for="resName">Name:</label>
+                <input type="text" id="resName" name="resName" required>
+                <label for="resEmail">Email:</label>
+                <input type="email" id="resEmail" name="resEmail" required>
+                <label for="resDate">Date:</label>
+                <input type="date" id="resDate" name="resDate" required>
+                <label for="resTime">Time:</label>
+                <input type="time" id="resTime" name="resTime" required>
+                <label for="resGuests">Number of Guests:</label>
+                <input type="number" id="resGuests" name="resGuests" required>
+                <button type="submit">Reserve</button>
+            </form>
+        </section>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div id="calendar"></div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
